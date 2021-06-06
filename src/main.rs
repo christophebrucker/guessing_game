@@ -1,3 +1,4 @@
+// Import Random number generators and other randomness functionality.
 extern crate rand;
 
 use std::io;
