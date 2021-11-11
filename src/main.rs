@@ -1,12 +1,22 @@
+// calling the external crate rand to use a random number generator
 extern crate rand;
 
+// bring the io library into scope
 use std::io;
+
+// calling the external crate ordering allowing to order numbers
 use std::cmp::Ordering;
+
+// calling the external crate Rng allowing to handle numbers ranges
 use rand::Rng;
 
+// defining the main function of our main.rs file
 fn main() {
-    println!("Guess the number!");
 
+    // showing to the user a string
+    println!("Guess an integer between 1 and 100!");
+
+    // generate a random integer between 1 and 100
     let secret_number = rand::thread_rng().gen_range(1, 101);
 
     loop {
